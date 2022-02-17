@@ -1,0 +1,49 @@
+.projectPost {
+  display: inline-flex;
+  margin: auto;
+  height: 250px;
+  margin-right: 75px;
+}
+
+.projectPostLeft {
+  width: 425px;
+}
+
+.projectPostRight {
+  display: flex;
+  flex-direction: column;
+  width: 425px;
+  padding: 35px 10px;
+}
+
+.projectPostThumbnail {
+  width: 345px;
+  height: 200px;
+  margin: 25px 0px 50px 50px;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.6) 0px 8px 24px;
+}
+
+.projectPostHeader {
+  font-family: omnes-pro, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 26px;
+  margin: 50px 0px 0px 10px;
+}
+
+.projectPostSubHeader {
+  font-family: omnes-pro, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
+  margin: 0px 355px 0px 0px;
+  color: grey;
+  text-align: left;
+  padding: 0px 0px 0px 10px;
+}
+
+.projectsWrapper {
+  margin: auto;
+  text-align: center;
+}

@@ -1,0 +1,67 @@
+.logo {
+  margin: 25px 25px 25px 25px;
+  display: flex;
+  flex-grow: 4;
+  height: 100%;
+}
+
+.logoText {
+  font-family: 'Kanit', sans-serif;
+  font-weight: 75px;
+  font-style: light;
+  font-size: 35px;
+  background-color: transparent;
+  height: 100%;
+}
+
+.topbar-container {
+  background-color: #424242;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, .8);
+  border-bottom: 1px solid #3fe416;
+}
+
+.heading {
+  margin: auto;
+  height: 90px;
+  display: flex;
+  justify-content: flex-end;
+  margin: auto;
+}
+
+.menuItem {
+  margin: 27px 25px 25px 25px;
+  font-family: 'Kanit', sans-serif;
+  font-weight: 75px;
+  font-style: light;
+  font-size: 22px;
+  background-color: transparent;
+}
+
+.menuItemText {
+  display: inline-block;
+  position: relative;
+  color: #3fe416;
+  text-decoration: none;
+}
+
+.menuItemText:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.75px;
+  bottom: 0;
+  left: 0;
+  background-color: #53c533;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.menuItemText:hover:after {
+  transform: scaleX(0.75);
+  transform-origin: bottom left;
+}
