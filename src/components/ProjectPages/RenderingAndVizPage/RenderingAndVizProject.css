@@ -66,6 +66,11 @@
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    transition: transform 0.4s;
+}
+
+.subImagesWrapper:hover {
+    transform: scale(1.02);
 }
 
 .iconWrapper {
