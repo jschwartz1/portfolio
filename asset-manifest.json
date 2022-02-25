@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.562c8e66.css",
+    "main.js": "/portfolio/static/js/main.ba77fe08.js",
+    "static/js/787.79ba28aa.chunk.js": "/portfolio/static/js/787.79ba28aa.chunk.js",
+    "static/media/main_card_rendering_and_viz.png": "/portfolio/static/media/main_card_rendering_and_viz.3f35b273072440c0365a.png",
+    "static/media/rendering_and_viz_hero_2.jpg": "/portfolio/static/media/rendering_and_viz_hero_2.b8cd5c0e5963fab50f5e.jpg",
+    "static/media/rendering_and_viz_hero_1.jpg": "/portfolio/static/media/rendering_and_viz_hero_1.d26f625e12ab580a2db4.jpg",
+    "static/media/mountain_lodge_birds_eye.jpg": "/portfolio/static/media/mountain_lodge_birds_eye.d25f865e409fefee77c2.jpg",
+    "static/media/rendering_and_viz_hero_3.jpg": "/portfolio/static/media/rendering_and_viz_hero_3.0a7a63cba95ad384b7b9.jpg",
+    "static/media/three_dee_modeling_hero_3.jpg": "/portfolio/static/media/three_dee_modeling_hero_3.de6edea3545c76600cbe.jpg",
+    "static/media/mountain_lodge_aurora.jpg": "/portfolio/static/media/mountain_lodge_aurora.e97f9c796d226afa8649.jpg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.ae26a23f852faf870ff2.jpg",
+    "static/media/three_dee_modeling_hero_2.jpg": "/portfolio/static/media/three_dee_modeling_hero_2.2959d58aac6448d16df9.jpg",
+    "static/media/construction_details_hero_one.jpg": "/portfolio/static/media/construction_details_hero_one.cdc439f3d22865ab60bb.jpg",
+    "static/media/three_dee_modeling_hero_1.jpg": "/portfolio/static/media/three_dee_modeling_hero_1.246862e02c034cf78b50.jpg",
+    "static/media/construction_details_hero_two.jpg": "/portfolio/static/media/construction_details_hero_two.af044fd37b31f3ee424f.jpg",
+    "static/media/landing_grid.png": "/portfolio/static/media/landing_grid.cc381675a7e703557294.png",
+    "static/media/main_card_construction_details.jpg": "/portfolio/static/media/main_card_construction_details.b9a521f0e5285da0b3ea.jpg",
+    "static/media/landing_grid_reflected.png": "/portfolio/static/media/landing_grid_reflected.27ddad2e06bc7fd0f6f5.png",
+    "static/media/logo.png": "/portfolio/static/media/logo.cfa9926e6d3faddfbec8.png",
+    "static/media/main_card_3D_modeling.jpg": "/portfolio/static/media/main_card_3D_modeling.8c3b574b4818beaa40ab.jpg",
+    "static/media/email_icon.png": "/portfolio/static/media/email_icon.b6518f3875a7974ae670.png",
+    "index.html": "/portfolio/index.html",
+    "main.562c8e66.css.map": "/portfolio/static/css/main.562c8e66.css.map",
+    "main.ba77fe08.js.map": "/portfolio/static/js/main.ba77fe08.js.map",
+    "787.79ba28aa.chunk.js.map": "/portfolio/static/js/787.79ba28aa.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.562c8e66.css",
+    "static/js/main.ba77fe08.js"
+  ]
+}
