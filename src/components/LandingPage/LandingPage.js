@@ -1,3 +1,4 @@
+// React import
 import React, { useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
 
@@ -5,19 +6,17 @@ import { NavLink } from 'react-router-dom'
 import profileImage from '../../assets/profile.jpg'
 import landingGrid from '../../assets/landing_grid.png'
 import emailIcon from '../../assets/email_icon.png'
-import arrowIcon from '../../assets/arrow_icon.png'
 
 // Card thumbnails
 import constructionDetailsThumbnail from '../../assets/main_card_construction_details.jpg'
 import threeDeeModelingCardThumbnail from '../../assets/main_card_3D_modeling.jpg'
-import allProjectsThumbnail from '../../assets/main_card_all_projects.jpg'
-import renderingAndVizThumbnail from '../../assets/main_card_rendering_and_viz.jpg'
+import renderingAndVizThumbnail from '../../assets/main_card_rendering_and_viz.png'
 
 // Hero images
-import visualExplorationOne from '../../assets/visual_explorations_1.jpg'
-import visualExplorationTwo from '../../assets/visual_explorations_2.jpg'
+import mountainLodgeBirdsEye from '../../assets/mountain_lodge_birds_eye.jpg'
+import mountainLodgeAurora from '../../assets/mountain_lodge_aurora.jpg'
 
-// Aos import
+// Aos and CSS import
 import './LandingPage.css'
 import 'aos/dist/aos.css'
 import Aos from 'aos';
@@ -26,7 +25,8 @@ const LandingPage = () => {
 
     useEffect(() => {
         Aos.init( {duration: 1500} )
-      }, [])    
+        window.scrollTo(0, 0)
+      }, [])
 
     return (
         <div className="master">
@@ -41,13 +41,10 @@ const LandingPage = () => {
                     <div className="heroSubText">
                         Designing sustainable and user-centric programs to create natural interactive spaces.
                     </div>
-                    <div className="emailButton">
-                        <img className="iconWrapper" src={emailIcon}></img>
+                    
+                    <div className="emailButton" onClick={() => { navigator.clipboard.writeText('jschwartz2000@gmail.com') }}>
+                        <img className="emailIconWrapper" src={emailIcon}></img>
                         jschwartz2000@gmail.com
-                    </div>
-                    <div data-aos='fade-up' className="featuredWork">
-                        Featured Work
-                        <img className="arrowIconWrapper" src={arrowIcon}></img>
                     </div>
                 </div>  
                 <div className="heroImage">
@@ -57,31 +54,29 @@ const LandingPage = () => {
             <img className="landingGridWrapper" src={landingGrid}></img>
             <div className="cards" data-aos='fade-up'>
                 <div className="thumbnailCol1">
-                    <NavLink to='/work'>
+                    <NavLink to='/work/construction_details'>
                         <img className="thumbnailWrapper" src={constructionDetailsThumbnail}></img>
-                    </NavLink>
-                    <NavLink to='/work'>
-                        <img className="thumbnailWrapper" src={allProjectsThumbnail}></img>
                     </NavLink>
                 </div>
                 <div className="thumbnailCol2">
-                    <NavLink to='/work'>
+                    <NavLink to='/work/rendering_and_viz'>
                         <img className="thumbnailWrapper" src={renderingAndVizThumbnail}></img>
                     </NavLink>
-                    <NavLink to='/work'>
+                    <NavLink to='/work/3D_modeling'>
                         <img className="thumbnailWrapper" src={threeDeeModelingCardThumbnail}></img>
                     </NavLink>
                 </div>
             </div>
             <img className="landingGridWrapper" src={landingGrid}></img>
             <div className="visualExplorations">
-                <h1>Visual Explorations</h1>
-                <img className="visualHeroWrapper" src={visualExplorationOne}></img>
-                <img className="visualHeroWrapper" src={visualExplorationTwo}></img>
+                <h1 className='headerText'>Visual Explorations</h1>
+                <img className="visualHeroWrapper" src={mountainLodgeBirdsEye}></img>
+                <div className='visualExplorationSubtext'>Rocky Mountain Lodge Plan View</div>
+                <img className="visualHeroWrapper" src={mountainLodgeAurora}></img>
+                <div className='visualExplorationSubtext'>Aurora Perspective</div>
             </div>
         </div>
     )
-
 }
 
 export default LandingPage;

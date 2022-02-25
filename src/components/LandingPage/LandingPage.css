@@ -28,10 +28,10 @@
 
 .heroSubText {
     position: relative;
-    top: 110px;
+    top: 90px;
     color: rgb(158, 158, 158);
     font-family: 'Kanit', sans-serif;
-    font-size: 24px;
+    font-size: 25px;
     max-width: 550px;
 }
 
@@ -44,6 +44,7 @@
 
 .landingGridWrapper {
     width: 100%;
+    height: 300px;
 }
 
 .profileWrapper {
@@ -79,35 +80,22 @@
     transform: scale(1.02);
 }
 
-.iconWrapper {
+/* .emailButton:active {
+    transform: translateY(10px);
+    border: 2px solid #3fe416;
+} */
+
+.emailIconWrapper {
     width: 25px;
     position: relative;
-    top: 4px;
     right: 4px;
+    top: 4px;
     padding-right: 10px;
-}
-
-.arrowIconWrapper {
-    width: 25px;
-    height: 45px;
-    position: relative;
-    top: 16px;
-    left: 25px;
-    padding-right: 10px;
-}
-
-.featuredWork {
-    position: relative;
-    color: #3fe416;
-    top: 400px;
-    font-family: 'Kanit', sans-serif;
-    font-size: 24px;
-    left: 50px;
 }
 
 .cards {
     position: relative;
-    top: -175px;
+    top: -50px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -155,8 +143,19 @@
 
 .visualHeroWrapper {
     margin: auto;
-    padding-top: 75px;
+    padding-top: 50px;
     aspect-ratio: calc(16/9);
     max-width: 1300px;
     max-height: 800px;
+}
+
+.headerText {
+    color: white;
+}
+
+.visualExplorationSubtext {
+    padding-top: 25px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 14px;
 }

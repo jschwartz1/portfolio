@@ -4,7 +4,7 @@
     padding-top: 75px;
     padding-bottom: 75px;
     color: #3fe416;
-    background-color: #545454;
+    background-color: #2a2a2a;
 }
 
 .footerMainText {
@@ -21,10 +21,10 @@
     font-weight: 400;
     font-style: normal;
     font-size: 22px;
-    color: #3fe416;
+    color: white;
     text-decoration: none;
 }
 
 .footerLink {
-    color: #3fe416;
+    color: white;
 }

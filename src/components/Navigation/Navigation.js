@@ -1,10 +1,26 @@
+// React
 import React from 'react'
 
+// Assets
+import logo from '../../assets/logo.png'
+
+// NavLink component
 import { NavLink } from 'react-router-dom'
 
+// CSS
 import './Navigation.css'
 
+// Navigation Component
 const Navigaton = () => {
+
+    const scrollToWork = () => {
+        window.scrollTo({top: 650, behavior: 'smooth'})
+    }
+
+    const scrollToBottom = () => {
+        window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})
+    }
+
     return (
         <header>
             <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -14,7 +30,7 @@ const Navigaton = () => {
                 <div className='logo'>
                     <div className='logoText'>
                         <NavLink className='menuItemText' to='/portfolio'>
-                            J S . L A
+                            <img src={logo} className='logoWrapper'></img>
                         </NavLink>
                     </div>
                 </div>
@@ -24,12 +40,12 @@ const Navigaton = () => {
                             Home
                         </NavLink>
                     </div>
-                    <div className='menuItem'>
+                    <div className='menuItem' onClick={scrollToWork}>
                         <NavLink className='menuItemText' to='/work'>
                             Work
                         </NavLink>
                     </div>
-                    <div className='menuItem'>
+                    <div className='menuItem' onClick={scrollToBottom}>
                         <NavLink className='menuItemText' to='/contact'>
                             Contact
                         </NavLink>

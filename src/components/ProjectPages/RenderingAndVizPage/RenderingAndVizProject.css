@@ -1,0 +1,87 @@
+.master {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #2a2a2a;
+    padding-top: 10px;
+}
+
+.landingGridReflected {
+    width: 100%;
+    height: 250px;
+}
+
+.accordionWrapper {
+    background-color: #2a2a2a;
+    height: 800px;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.slideWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: -75px;
+    transform: all 2s ease;
+}
+
+.slideImageWrapper {
+    max-width: 1200px;
+    width: 80%;
+    height: 650px;
+}
+
+.heroWrapper {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.arrowPrevious {
+    position: relative;
+    justify-content: space-between;
+    color: #3fe416;
+    top: 225px;
+}
+
+.arrowNext {
+    position: relative;
+    justify-content: space-between;
+    color: #3fe416;
+    top: 225px;
+}
+
+.subImagesContainer {
+    display: inline-flex;
+    justify-content: center;
+}
+
+.subImagesWrapper {
+    max-width: 175px;
+    width: 10%;
+    height: 100px;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.iconWrapper {
+    height: 40px;
+    width: 25px;
+    position: relative;
+    top: 225px;
+    right: 4px;
+    padding-right: 10px;
+}
+
+.sliderHeading {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 46px;
+    position: relative;
+    top: -125px;
+    margin: auto;
+}

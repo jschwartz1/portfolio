@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 
 import Navigaton from './components/Navigation/Navigation.js';
 import LandingPage from './components/LandingPage/LandingPage.js';
-import WorkPage from './components/WorkPage/WorkPage.js';
-import ContactPage from './components/ContactPage/ContactPage.js';
+import ConstructionDetailsProject from './components/ProjectPages/ConstructionDetailsPage/ConstructionDetailsProject.js';
+import RenderingAndVizProject from './components/ProjectPages/RenderingAndVizPage/RenderingAndVizProject.js'
+import ThreeDeeModelingProject from './components/ProjectPages/ThreeDeeModelingPage/ThreeDeeModelingProject.js';
 import Footer from './components/Footer/Footer.js'
 import {
   BrowserRouter as Router,
@@ -24,8 +25,11 @@ class App extends Component {
         <Navigaton></Navigaton>
         <Routes>
           <Route exact path='/portfolio' element={<LandingPage/>}></Route>
-          <Route path='/work' element={<WorkPage/>}></Route>
-          <Route path='/contact' element={<ContactPage/>}></Route>
+          <Route path='/work' element={<LandingPage/>}></Route>
+          <Route path='/work/construction_details' element={<ConstructionDetailsProject/>}></Route>
+          <Route path='/work/rendering_and_viz' element={<RenderingAndVizProject/>}></Route>
+          <Route path='/work/3D_modeling' element={<ThreeDeeModelingProject/>}></Route>
+          <Route path='/contact' element={<LandingPage/>}></Route>
         </Routes>
         <Footer></Footer>
       </Router>

@@ -9,9 +9,6 @@ const Footer = () => {
             <link rel="preconnect" href="https://fonts.googleapis.com"></link>
             <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></link>
             <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet"></link>
-            <p className="footerMainText">
-                Thanks for making it to the bottom!
-            </p>
             <p className="footerSubText">
                 <a
                 className='footerLink'

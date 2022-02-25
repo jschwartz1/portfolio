@@ -21,7 +21,7 @@
   align-items: center;
   margin: auto;
   box-shadow: 0px 5px 0px rgba(0, 0, 0, .8);
-  border-bottom: 1px solid #3fe416;
+  border-bottom: 3px solid #3fe416;
 }
 
 .heading {
@@ -64,4 +64,13 @@
 .menuItemText:hover:after {
   transform: scaleX(0.75);
   transform-origin: bottom left;
+}
+
+.logoWrapper {
+  position: relative;
+  top: 5px;
+  display: flex;
+  margin: auto;
+  width: 200px;
+  height: 60px;
 }
