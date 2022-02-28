@@ -41,7 +41,7 @@ const LandingPage = () => {
                         Josh Schwartz
                     </div>
                     <div className="heroSubText">
-                        Landscape Architect Student
+                        Landscape Architecture Student
                     </div>
                     <div className="heroSubText">
                         University of Georgia
