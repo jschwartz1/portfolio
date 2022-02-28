@@ -6,6 +6,7 @@ import { NavLink } from 'react-router-dom'
 import profileImage from '../../assets/profile.jpg'
 import landingGrid from '../../assets/landing_grid.png'
 import emailIcon from '../../assets/email_icon.png'
+import linkedInIcon from '../../assets/linked_in_icon.png'
 
 // Card thumbnails
 import constructionDetailsThumbnail from '../../assets/main_card_construction_details.jpg'
@@ -15,6 +16,7 @@ import renderingAndVizThumbnail from '../../assets/main_card_rendering_and_viz.p
 // Hero images
 import mountainLodgeBirdsEye from '../../assets/mountain_lodge_birds_eye.jpg'
 import mountainLodgeAurora from '../../assets/mountain_lodge_aurora.jpg'
+import singleFamilyHousing from '../../assets/single_family_housing.jpg'
 
 // Aos and CSS import
 import './LandingPage.css'
@@ -36,15 +38,29 @@ const LandingPage = () => {
             <div className="heroWrapper">
                 <div className="heroTextWrapper">
                     <div className="heroTextMain">
-                        Hi, I'm Joshua Schwartz. Landscape Architect Student at the University of Georgia
+                        Josh Schwartz
                     </div>
                     <div className="heroSubText">
-                        Designing sustainable and user-centric programs to create natural interactive spaces.
+                        Landscape Architect Student
                     </div>
-                    
-                    <div className="emailButton" onClick={() => { navigator.clipboard.writeText('jschwartz2000@gmail.com') }}>
-                        <img className="emailIconWrapper" src={emailIcon}></img>
-                        jschwartz2000@gmail.com
+                    <div className="heroSubText">
+                        University of Georgia
+                    </div>
+                    <div className='buttonsWrapper'>
+                        <div className="emailButton" onClick={() => { navigator.clipboard.writeText('jschwartz2000@gmail.com') }}>
+                            <img className="emailIconWrapper" src={emailIcon}></img>
+                            jschwartz2000@gmail.com
+                        </div>
+                        <div className='linkButton'>
+                            <a className='footerLink' target='_blank' href='https://www.linkedin.com/in/josh-s-a33198133/'>
+                                <img className='littleIconWrapper' src={linkedInIcon}></img>
+                            </a>
+                        </div>
+                    </div>
+                    <div className='resumeButton'>
+                        <a className='resumeLink' target='_blank' href='https://docs.google.com/document/d/1xU2LZ7W8Np-BNtWOabHhBu3DPrTj3EZh73nJ9khBCMo/edit'>
+                            Resume/CV
+                        </a>
                     </div>
                 </div>  
                 <div className="heroImage">
@@ -70,10 +86,12 @@ const LandingPage = () => {
             <img className="landingGridWrapper" src={landingGrid}></img>
             <div className="visualExplorations">
                 <h1 className='headerText'>Visual Explorations</h1>
+                <img className="visualHeroWrapper" src={singleFamilyHousing}></img>
+                <div className='visualExplorationSubtext'>Single Family Housing</div>
                 <img className="visualHeroWrapper" src={mountainLodgeBirdsEye}></img>
                 <div className='visualExplorationSubtext'>Rocky Mountain Lodge Plan View</div>
                 <img className="visualHeroWrapper" src={mountainLodgeAurora}></img>
-                <div className='visualExplorationSubtext'>Aurora Perspective</div>
+                <div className='visualExplorationSubtext'>Aurora Perspective</div> 
             </div>
         </div>
     )

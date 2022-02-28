@@ -31,7 +31,6 @@ class App extends Component {
           <Route path='/work/3D_modeling' element={<ThreeDeeModelingProject/>}></Route>
           <Route path='/contact' element={<LandingPage/>}></Route>
         </Routes>
-        <Footer></Footer>
       </Router>
   );
   }

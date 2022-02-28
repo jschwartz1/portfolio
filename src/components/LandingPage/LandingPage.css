@@ -33,6 +33,7 @@
     font-family: 'Kanit', sans-serif;
     font-size: 25px;
     max-width: 550px;
+    padding-bottom: 10px;
 }
 
 .heroImage {
@@ -40,6 +41,7 @@
     justify-content: center;
     position: relative;
     top: 120px;
+    padding-left: 125px;
 }
 
 .landingGridWrapper {
@@ -53,11 +55,16 @@
     width: 300px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 48px;
     transition: transform 0.4s;
+    
 }
 
 .profileWrapper:hover {
     transform: scale(1.02);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 60px;
+}
+
+.buttonsWrapper {
+    display: inline-flex;
 }
 
 .emailButton {
@@ -66,7 +73,7 @@
     vertical-align: middle;
     line-height: 48px;
     color: #3fe416;
-    top: 170px;
+    top: 115px;
     background-color: #424242;
     width: 275px;
     height: 50px;
@@ -80,6 +87,50 @@
     transform: scale(1.02);
 }
 
+.linkButton {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    background-color: #424242;
+    width: 50px;
+    height: 50px;
+    border-radius: 2%;
+    top: 115px;
+    margin-left: 20px;
+    transition: transform 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 72px;
+}
+
+.linkButton:hover {
+    transform: scale(1.02);
+}
+
+.resumeLink {
+    color: #3fe416;
+    text-decoration: none;
+}
+
+.resumeButton {
+    position: relative;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 48px;
+    color: #3fe416;
+    background-color: #424242;
+    width: 345px;
+    height: 50px;
+    font-family: 'Kanit', sans-serif;
+    border-radius: 2%;
+    top: 140px;
+    transition: transform 0.4s;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 72px;
+}
+
+.resumeButton:hover {
+    transform: scale(1.02);
+}
+
 /* .emailButton:active {
     transform: translateY(10px);
     border: 2px solid #3fe416;
@@ -90,6 +141,14 @@
     position: relative;
     right: 4px;
     top: 4px;
+    padding-right: 10px;
+}
+
+.littleIconWrapper {
+    width: 22.5px;
+    position: relative;
+    left: 4px;
+    top: 7px;
     padding-right: 10px;
 }
 
@@ -145,6 +204,7 @@
     margin: auto;
     padding-top: 50px;
     aspect-ratio: calc(16/9);
+    width: 1200px;
     max-width: 1300px;
     max-height: 800px;
 }

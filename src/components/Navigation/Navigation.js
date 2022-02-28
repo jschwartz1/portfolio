@@ -17,10 +17,6 @@ const Navigaton = () => {
         window.scrollTo({top: 650, behavior: 'smooth'})
     }
 
-    const scrollToBottom = () => {
-        window.scrollTo({top: document.body.scrollHeight, behavior: 'smooth'})
-    }
-
     return (
         <header>
             <link rel="preconnect" href="https://fonts.googleapis.com"></link>
@@ -45,7 +41,7 @@ const Navigaton = () => {
                             Work
                         </NavLink>
                     </div>
-                    <div className='menuItem' onClick={scrollToBottom}>
+                    <div className='menuItem'>
                         <NavLink className='menuItemText' to='/contact'>
                             Contact
                         </NavLink>
