@@ -17,6 +17,7 @@ import renderingAndVizThumbnail from '../../assets/main_card_rendering_and_viz.p
 import mountainLodgeBirdsEye from '../../assets/mountain_lodge_birds_eye.jpg'
 import mountainLodgeAurora from '../../assets/mountain_lodge_aurora.jpg'
 import singleFamilyHousing from '../../assets/single_family_housing.jpg'
+import mountainLodgePostProcessed from '../../assets/mountain_lodge_post_processed.jpg'
 
 // Aos and CSS import
 import './LandingPage.css'
@@ -92,6 +93,8 @@ const LandingPage = () => {
                 <div className='visualExplorationSubtext'>Rocky Mountain Lodge Plan View</div>
                 <img className="visualHeroWrapper" src={mountainLodgeAurora}></img>
                 <div className='visualExplorationSubtext'>Aurora Perspective</div> 
+                <img className="visualHeroWrapper" src={mountainLodgePostProcessed}></img>
+                <div className='visualExplorationSubtext'>Photoshop Perspective</div> 
             </div>
         </div>
     )
